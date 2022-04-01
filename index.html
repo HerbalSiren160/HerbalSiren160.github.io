@@ -2,11 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Document</title>
+  <title>Dotazník</title>
 </head>
+
+<script>
+  let dotazniky = ['1','2','3','4','5','6'];
+  let index = Math.floor(Math.random() * 6);
+  let link = document.getElementsByClassName('link')[0]
+  
+  link.setAttribute('href', dotazniky[index])
+</script>
+
 <body>
 
-  <main>TEST</main>
+  <main>
+
+    <p>
+      Popis veľmi úžasný
+    </p>
+
+    <a href="#">DOTAZNIK</a>
+
+  </main>
   
 </body>
 </html>
