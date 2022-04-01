@@ -5,16 +5,7 @@
   <title>Dotazník</title>
 </head>
 
-<script>
-  let dotazniky = ['1','2','3','4','5','6'];
-  let index = Math.floor(Math.random() * 6);
-  let link = document.getElementsByClassName('link')[0]
-  
-  link.setAttribute('href', dotazniky[index])
-</script>
-
 <body>
-
   <main>
 
     <p>
@@ -24,6 +15,14 @@
     <a href="#">DOTAZNIK</a>
 
   </main>
+
+  <script>
+    let dotazniky = ['1','2','3','4','5','6'];
+    let index = Math.floor(Math.random() * 6);
+    let link = document.getElementsByClassName('link')[0]
+    
+    link.setAttribute('href', dotazniky[index])
+  </script> 
   
 </body>
 </html>
