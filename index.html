@@ -1,51 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Dotazník</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dotazník</title>
+  </head>
 
-<style>
-  main {
-    width: 90%;
-    margin: auto;
-    padding: 1em;
-  }
+  <style>
+    body {
+      font-family: sans-serif;
+    }
 
-  .link {
-    padding: .75em;
-    background-color: green;
-    border-radius: 5px;
-    text-decoration: none;
-    color: white;
-  }
-</style>
+    main {
+      width: 75ch;
+      margin: auto;
+      padding: 1em;
+    }
 
-<body>
-  <main>
+    .link {
+      text-decoration: none;
+    }
+  </style>
 
-    <p>
-      
-    </p>
+  <body>
+    <main>
+      <p>Dobrý deň,</p>
 
-    <a href="#" class="link">DOTAZNIK</a>
+      <p>
+        som študentom aplikovanej informatiky na Přírodovědecké fakulte
+        Univerzity Palackého v Olomouci a poprosil by som Vás o vyplnenie
+        krátkeho dotazníku. Dotazník má skúmať vplyv transformácií fotografií na
+        schopnosť rozpoznať objekty na fotografiách.
+      </p>
 
-  </main>
+      <p>
+        Vyplnenie dotazníku by Vám malo zabrať asi 10 minút. Všetky odpovede sú
+        anonymné. Nazbierané dáta budú následne porovnávané s výstupmi
+        niekoľkých modelov konvolučných neuronových sietí.
+      </p>
 
-  <script>
-    let dotazniky = [
-      'https://forms.gle/kiYrUHhZ3vUspJ8aA',
-      'https://forms.gle/kr4SJHL44wM7FAKz6',
-      'https://forms.gle/kxeQkjRuFFfmnTFL7',
-      'https://forms.gle/hyCcdFMJtZPZEzLk9',
-      'https://forms.gle/1MLbELWppvQrmExX9',
-      'https://forms.gle/SF2L3qy829VVnhrq5'
-    ];
-    let index = Math.floor(Math.random() * 6);
-    let link = document.getElementsByClassName('link')[0]
+      <p>
+        Dotazníkov je niekoľko verzií. Prosím Vás o vyplnenie len jedného z nich
+        a to len jedenkrát. Dôvodom je, že po jednom vyplnení dotazníku už
+        budete raz vidieť fotografie, čo by mohlo ovplyvniť vypĺňanie ďalšieho.
+        Napríklad by to mohlo pomôcť rozpoznať objekt na fotografií, ktorý by ste
+        normálne nespoznali.
+      </p>
 
-    link.setAttribute('href', dotazniky[index])
-  </script> 
-  
-</body>
+      <p>
+        Nasledujúci odkaz Vás presmeruje na jeden z dotazníkov: <a href="#" class="link">DOTAZNÍK</a>
+      </p>
+    </main>
+
+    <script>
+      let dotazniky = [
+        "https://forms.gle/kiYrUHhZ3vUspJ8aA",
+        "https://forms.gle/kr4SJHL44wM7FAKz6",
+        "https://forms.gle/kxeQkjRuFFfmnTFL7",
+        "https://forms.gle/hyCcdFMJtZPZEzLk9",
+        "https://forms.gle/1MLbELWppvQrmExX9",
+        "https://forms.gle/SF2L3qy829VVnhrq5",
+      ];
+      let index = Math.floor(Math.random() * 6);
+      let link = document.getElementsByClassName("link")[0];
+
+      link.setAttribute("href", dotazniky[index]);
+    </script>
+  </body>
 </html>
