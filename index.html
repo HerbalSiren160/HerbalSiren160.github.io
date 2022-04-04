@@ -13,7 +13,7 @@
   }
 
   .link {
-    padding: 1em;
+    padding: .75em;
     background-color: green;
     border-radius: 5px;
     text-decoration: none;
@@ -25,7 +25,7 @@
   <main>
 
     <p>
-      Popis veľmi úžasný
+      
     </p>
 
     <a href="#" class="link">DOTAZNIK</a>
@@ -33,7 +33,14 @@
   </main>
 
   <script>
-    let dotazniky = ['1','2','3','4','5','6'];
+    let dotazniky = [
+      'https://forms.gle/kiYrUHhZ3vUspJ8aA',
+      'https://forms.gle/kr4SJHL44wM7FAKz6',
+      'https://forms.gle/kxeQkjRuFFfmnTFL7',
+      'https://forms.gle/hyCcdFMJtZPZEzLk9',
+      'https://forms.gle/1MLbELWppvQrmExX9',
+      'https://forms.gle/SF2L3qy829VVnhrq5'
+    ];
     let index = Math.floor(Math.random() * 6);
     let link = document.getElementsByClassName('link')[0]
 
