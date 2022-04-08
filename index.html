@@ -24,6 +24,7 @@
       background-repeat: no-repeat;
       background-size: 48em;
       padding-top: 16em;
+      margin-bottom: 15em;
     }
 
     .link {
@@ -45,16 +46,17 @@
     }
 
     .more-info {
-      display: none;
       margin: auto -2em;
-      padding: 1em 2em;
-      height: 0;
+      padding: 0 2em;
+      overflow: hidden;
       background-color: #cdd7e1;
+      transition: 300ms ease-in-out;
+      max-height: 0;
     }
 
     .active {
-      display: block;
-      height: fit-content;
+      max-height: 300px;
+      padding: 1em 2em;
     }
   </style>
 
