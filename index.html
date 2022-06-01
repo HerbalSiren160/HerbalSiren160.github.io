@@ -2,124 +2,39 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Dotazník</title>
+    <title>Nothing</title>
   </head>
 
   <style>
+    @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&family=Share+Tech+Mono&display=swap");
+
     body {
-      font-family: sans-serif;
-      font-size: 1.3em;
-      background-color: #c0cdd9;
-      color: #111111;
+      background-color: #121212;
+      font-family: "Lato", sans-serif;
+      font-family: "Share Tech Mono", monospace;
     }
 
     main {
-      width: min(75ch, 85%);
-      margin: 1em auto;
-      padding: 2em;
-      background-color: #f2f5f7;
-      border-radius: 10px;
-      background-image: url("https://www.beebotech.com.au/wp-content/uploads/2018/01/ml.jpg");
-      background-position: -1em -12em;
-      background-repeat: no-repeat;
-      background-size: 48em;
-      padding-top: 16em;
-      margin-bottom: 15em;
+      width: 100%;
+      height: 98vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 
-    .link {
-      text-decoration: none;
+    span {
+      color: green;
+      font-weight: 900;
+      font-size: 10em;
       display: block;
       width: fit-content;
-      padding: 0.75em;
       margin: auto;
-      background-color: #033767;
-      color: white;
-      border-radius: 5px;
-      font-weight: 500;
-    }
-
-    .more-link {
-      color: #033767;
-      text-decoration: underline;
-      cursor: pointer;
-    }
-
-    .more-info {
-      margin: auto -2em;
-      padding: 0 2em;
-      overflow: hidden;
-      background-color: #cdd7e1;
-      transition: 300ms ease-in-out;
-      max-height: 0;
-    }
-
-    .active {
-      max-height: 300px;
-      padding: 1em 2em;
     }
   </style>
 
   <body>
     <main>
-      <p>Dobrý deň,</p>
-
-      <p>
-        som študentom aplikovanej informatiky na Přírodovědecké fakulte
-        Univerzity Palackého v&nbspOlomouci a&nbsppoprosil by som Vás
-        o&nbspvyplnenie krátkeho dotazníku. Vyplnenie dotazníku by Vám nemalo
-        zabrať viac ako 10 minút. Všetky odpovede sú anonymné.
-      </p>
-
-      <p>
-        Dotazník má skúmať vplyv transformácií fotografií na schopnosť rozpoznať
-        objekty na fotografiách. Nazbierané dáta budú následne porovnávané
-        s&nbspvýstupmi niekoľkých modelov konvolučných neuronových sietí.
-        <span class="more-link">Viac info o&nbsppokuse.</span>
-      </p>
-
-      <p class="more-info">
-        Cieľom pokusu je nájsť také transformácie obrázkov, ktoré ľuďom
-        neznemožňujú rozpoznať objekt na obrázku, ale konvolučné neurónové siete
-        už tento objekt nespoznajú. Konvolučné neurónové siete nie sú nijako
-        špeciálne trénované na rozpoznávanie obrázkov aj s použitými
-        transformáciami. A teda väčšinu daných obrázkov nerozpoznali. Ďalšia
-        úvaha je následne o tom, ako by sa dali tieto zistenia a "slabiny"
-        odstrániť, napríklad navrhnutím vhodných tréningových dát aj s
-        transformáciami a skúsiť či sa úspešnosť zvýši.
-      </p>
-
-      <p>
-        Dotazníkov je niekoľko verzií. Prosím Vás o vyplnenie len jedného
-        z&nbspnich a&nbspto len jedenkrát. K&nbsprozpracovanému dotazníku sa
-        nebude možné vrátiť.
-      </p>
-
-      <p>Nasledujúce tlačidlo Vás presmeruje na jeden z&nbspdotazníkov:</p>
-
-      <a href="#" class="link">SPUSTIŤ DOTAZNÍK</a>
+      <span>nothing is here</span>
     </main>
-
-    <script>
-      let dotazniky = [
-        "https://forms.gle/kiYrUHhZ3vUspJ8aA", // Dotaznik 1
-        "https://forms.gle/kr4SJHL44wM7FAKz6", // Dotaznik 2
-        "https://forms.gle/kxeQkjRuFFfmnTFL7", // Dotaznik 3
-        "https://forms.gle/hyCcdFMJtZPZEzLk9", // Dotaznik 4
-        "https://forms.gle/1MLbELWppvQrmExX9", // Dotaznik 5
-        "https://forms.gle/SF2L3qy829VVnhrq5", // Dotaznik 6
-      ];
-      let index = Math.floor(Math.random() * 6);
-      let link = document.getElementsByClassName("link")[0];
-
-      link.setAttribute("href", dotazniky[index]);
-
-      let moreLink = document.getElementsByClassName("more-link")[0];
-      let moreText = document.getElementsByClassName("more-info")[0];
-
-      moreLink.addEventListener("click", (e) => {
-        moreText.classList.toggle("active");
-      });
-    </script>
   </body>
 </html>
